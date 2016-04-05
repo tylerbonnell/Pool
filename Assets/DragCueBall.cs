@@ -9,12 +9,6 @@ public class DragCueBall : MonoBehaviour {
 	public float factor = 100f;
 	public float speedUp = .3f;
 
-	void Update() {
-		Vector3 pos = transform.position;
-		pos.y = Mathf.Min(-0.1f, pos.y);
-		transform.position = pos;
-	}
-
 	void Start() {
 		rb = GetComponent<Rigidbody> ();
 	}
